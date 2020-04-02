@@ -57,13 +57,21 @@ body {
 	color: #000;
     text-decoration: none;
 
-    transition: background .2s linear;
+    transition: all .2s linear;
+}
+
+.nav-link:last-child {
+	margin-left: 50px;
 }
 
 .nav-link:hover {
-	background-color: #d8ffce;
+	background-color: #000;
+	color: #fff;
 }
 
+.nav-link:last-child:hover {
+	background-color: #0055ff;
+}
 
 /* Intro 
 ========================*/
@@ -83,29 +91,138 @@ body {
 
 }
 
-.destinations {
+.destination {
+	display: flex;
+	justify-content: space-between;
+}
+
+.cities {
 	display: flex;
 	flex-direction: column;
 }
 
-.destinations > input {
+.input-city {
 	width: 350px;
-	height: 50px;
+	height: 60px;
 	padding: 10px;
 
 	font-size: 20px;
 	font-weight: 700;
 	text-transform: uppercase;
+
+	border: 1px solid rgba(0, 0, 0, 0.4);
 }
 
-.destinations > input:first-child {
+.input-city:first-child {
 	margin-bottom: 20px;
 }
 
-.destinations > input::placeholder {
+.input-city::placeholder {
 	font-size: 20px;
 	font-weight: 700;
 }
+
+.data-and-quantity {
+	display: flex;
+	flex-direction: column;
+}
+
+.input-date {
+	position: relative;
+	height: 60px;
+	padding: 10px;
+	margin-bottom: 20px;
+
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+
+	border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.input-date::-webkit-calendar-picker-indicator {
+  color: transparent;
+  opacity: 1;
+  background: url("images/date.png") no-repeat center;
+  background-size: contain;
+}
+
+.input-quantity {
+	position: relative;
+	height: 60px;
+	padding: 10px;
+
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+
+	background: #fff url("images/passanger.png") no-repeat;
+  	background-size: auto;
+	background-position: 217px center;
+
+	border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.quantity-icon {
+	position: absolute;
+}
+
+.confirm-order {
+	height: 140px;
+	width: 180px;
+	padding: 20px 0;
+
+	background: #fff;
+
+	border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.order-btn {
+	display: block;
+
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+	
+	color: #000;
+}
+
+.price {
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+
+	color: #d40808;
+}
+
+.price:after {
+	content: "₴";
+	margin: 5px;
+	color: #d40808;
+}
+
+.confirm-order:hover {
+	background: #0055ff;
+	color: #fff;
+}
+
+.confirm-order:hover .price {
+	color: #fff;
+}
+
+
+.confirm-order:hover .price:after {
+	color: #fff;
+}
+
+
+
+
 
 
 

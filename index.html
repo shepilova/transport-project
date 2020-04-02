@@ -16,6 +16,7 @@
 				<nav class="nav">
 					<a class="nav-link" href="">Маршруты</a>
 					<a class="nav-link" href="">О компании</a>
+					<a class="nav-link" href="">Контакты</a>
 					<a class="nav-link" href="">Личный кабинет</a>
 				</nav>
 			</div> <!-- header-inner -->
@@ -25,17 +26,22 @@
 	<div class="intro">
 		<div class="container">
 			<div class="intro-inner">
-				<div class="destinations">
+				<div class="destination">
 					<div class="cities">
-						<input type="text" name="departure" placeholder="From">
-						<input type="text" name="arrival" placeholder="To">
+						<input class="input-city" type="text" name="departure" placeholder="From">
+						<input class="input-city" type="text" name="arrival" placeholder="To">
 					</div> <!-- cities -->
 					<div class="data-and-quantity">
-						
-					</div>
+						<input class="input-date" type="date" name="date">
+						<input class="input-quantity" type="text" name="quantity" placeholder="Пассажиры" autocomplete="off">
+					</div> <!-- data-and-quantity -->
+					<a class="confirm-order order-btn" href="">Заказать <span class="price">350</span></a>
 				</div> <!-- destinations -->
+				
 			</div> <!-- intro-inner -->
 		</div> <!-- container -->
 	</div> <!-- intro -->
+
+
 </body>
 </html>
