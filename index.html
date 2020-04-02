@@ -3,10 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Transport</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 	<header class="header">
 		<div class="container">
@@ -16,12 +17,14 @@
 				<nav class="nav">
 					<a class="nav-link" href="">Маршруты</a>
 					<a class="nav-link" href="">О компании</a>
+					<a class="nav-link" href="">Вернуть билет</a>
 					<a class="nav-link" href="">Контакты</a>
 					<a class="nav-link" href="">Личный кабинет</a>
 				</nav>
 			</div> <!-- header-inner -->
 		</div> <!-- container -->
 	</header>
+
 
 	<div class="intro">
 		<div class="container">
@@ -31,17 +34,141 @@
 						<input class="input-city" type="text" name="departure" placeholder="From">
 						<input class="input-city" type="text" name="arrival" placeholder="To">
 					</div> <!-- cities -->
+
 					<div class="data-and-quantity">
 						<input class="input-date" type="date" name="date">
 						<input class="input-quantity" type="text" name="quantity" placeholder="Пассажиры" autocomplete="off">
 					</div> <!-- data-and-quantity -->
 					<a class="confirm-order order-btn" href="">Заказать <span class="price">350</span></a>
 				</div> <!-- destinations -->
-				
 			</div> <!-- intro-inner -->
 		</div> <!-- container -->
 	</div> <!-- intro -->
 
 
+	<div class="map">
+		<div class="container">
+			<div class="map-inner">
+				<img class="map-photo" src="images/map.png">
+			</div> <!-- map-inner -->
+		</div> <!-- container -->
+	</div> <!-- map -->
+	
+	
+	<div class="features">
+		<div class="container">
+			<div class="features-inner">
+				<div class="features-item">
+					<img class="features-icon" src="images/features/clock.png"></img>
+					<h2 class="features-title">Без касс и очередей</h2>
+					<h3 class="features-text">Билеты онлайн в любое время на сайте и в приложении</h3>
+				</div> <!-- features-item -->
+
+				<div class="features-item">
+					<img class="features-icon" src="images/features/destination.png"></img>
+					<h2 class="features-title">50 000 направлений</h2>
+					<h3 class="features-text">Рейтинг рейсов перевозчиков по отзывам пассажиров</h3>
+				</div> <!-- features-item -->
+
+				<div class="features-item">
+					<img class="features-icon" src="images/features/money.png"></img>
+					<h2 class="features-title">Безопасная оплата</h2>
+					<h3 class="features-text">Билеты онлайн в любое время на сайте и в приложении</h3>
+				</div> <!-- features-item -->
+
+				<div class="features-item">
+					<img class="features-icon" src="images/features/tickets.png"></img>
+					<h2 class="features-title">Возврат билетов</h2>
+					<h3 class="features-text">Быстрое оформление возврата в личном кабинете</h3>
+				</div> <!-- features-item -->
+
+				<div class="features-item">
+					<img class="features-icon" src="images/features/clock.png"></img>
+					<h2 class="features-title">Без касс и очередей</h2>
+					<h3 class="features-text">Билеты онлайн в любое время на сайте и в приложении</h3>
+				</div> <!-- features-item -->
+
+				<div class="features-item">
+					<img class="features-icon" src="images/features/destination.png"></img>
+					<h2 class="features-title">50 000 направлений</h2>
+					<h3 class="features-text">Рейтинг рейсов перевозчиков по отзывам пассажиров</h3>
+				</div> <!-- features-item -->
+
+				<div class="features-item">
+					<img class="features-icon" src="images/features/money.png"></img>
+					<h2 class="features-title">Безопасная оплата</h2>
+					<h3 class="features-text">Билеты онлайн в любое время на сайте и в приложении</h3>
+				</div> <!-- features-item -->
+
+				<div class="features-item">
+					<img class="features-icon" src="images/features/tickets.png"></img>
+					<h2 class="features-title">Возврат билетов</h2>
+					<h3 class="features-text">Быстрое оформление возврата в личном кабинете</h3>
+				</div> <!-- features-item -->
+			</div> <!-- features-inner -->
+		</div> <!-- container -->
+	</div> <!-- features -->
+
+
+	<main>
+		<!-- TRANSPORTER -->
+		<div class="main-section"> 
+			<div class="container">
+				<div class="main-section-inner">
+					<div class="main-info">
+						<h2 class="main-title">Для перевозчиков</h2>
+						<h3 class="main-text">Находить пассажиров теперь просто! Начните зарабатывать вместе с «Название» уже сегодня. Просто зарагестрируйте маршрут</h3>
+						<a class="main-btn" href="">Зарегистрировать свой маршрут</a>
+					</div>
+					<img class="main-photo right-photo" src="images/car.png"></img>
+				</div> <!-- main-section-inner -->
+			</div> <!-- container -->
+		</div> 
+		
+		<!-- CALL-CENTRE -->
+		<div class="main-section"> 
+			<div class="container">
+				<div class="main-section-inner">
+					<img class="main-photo left-photo" src="images/call-centre.png"></img>
+					<div class="main-info">
+						<h2 class="main-title">Call-center <span class="red">24/7</span></h2>
+						<h3 class="main-text">Находить пассажиров теперь просто! Начните зарабатывать вместе с «Название» уже сегодня. Просто зарагестрируйте маршрут</h3>
+						<a class="main-btn" href="">Связаться с call-center</a>
+					</div>
+				</div> <!-- main-section-inner -->
+			</div> <!-- container -->
+		</div> 
+
+		<!-- FOR PASSENGERS -->
+		<div class="main-section"> 
+			<div class="container">
+				<div class="main-section-inner">
+					<div class="main-info">
+						<h2 class="main-title">Для пассажиров</h2>
+						<h3 class="main-text">Что бы быть в курсе всех нововведений, отслеживать рейсы, и выбирать перевозчиков самостоятельно - просто авторизируйтесь или создайте аккаунт!</h3>
+						<a class="main-btn" href="">Зарегистрироваться в системе</a>
+					</div>
+					<img class="main-photo left-photo" src="images/passengers.png"></img>
+				</div> <!-- main-section-inner -->
+			</div> <!-- container -->
+		</div> 
+
+	</main>
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
