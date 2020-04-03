@@ -51,6 +51,7 @@ body {
     display: inline-block;
     vertical-align: top;
     padding: 15px;
+    margin-right: -4px;
 
     position: relative;
 	
@@ -372,7 +373,7 @@ body {
 
 .mobile-photo {
 	position: absolute;
-	right: 22%;
+	right: 11%;
 	bottom: 0;
 	z-index: 10;
 
